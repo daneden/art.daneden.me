@@ -1,6 +1,6 @@
 const pieces = [
   {
-    image: "images/export-22.344053.png",
+    image: "export-22.344053.png",
     description: `
     Given an origin and a parallel destination, draw 1000 points of varying
     transparency between them. Using Perlin noise, calculate a delta vector
@@ -11,7 +11,7 @@ const pieces = [
     `,
   },
   {
-    image: "images/export-096.png",
+    image: "export-096.png",
     description: `
     Pack as many circles as possible within another circle, ensuring they
     don't overlap. Draw a line through the middle of each of the sub-circles
@@ -19,7 +19,7 @@ const pieces = [
     `,
   },
   {
-    image: "/images/export-45.66896.png",
+    image: "export-45.66896.png",
     description: `
     Plot two kinds of objects around the canvas; attractors and particles.
     Particles are attracted to attractors, and their path/history is shown
@@ -30,7 +30,7 @@ const pieces = [
     `,
   },
   {
-    image: "/images/export-498.5307.png",
+    image: "export-498.5307.png",
     description: `
     Pick a random origin and destination vector, and a random delta vector.
     Draw a series of points between the origin and destination. On the next
@@ -44,7 +44,7 @@ const pieces = [
     `,
   },
   {
-    image: "/images/shell-0635.png",
+    image: "shell-0635.png",
     description: `
     Plot a series of connected points around the center of the canvas, using
     three-dimensional Perlin noise to vary the radius. Repeat this with an
