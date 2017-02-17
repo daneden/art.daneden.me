@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Frame from './Frame'
+import DefinitionList from './DefinitionList'
+
 import pieces from './pieces'
+import definitions from './definitions'
 
 class App extends Component {
   render() {
@@ -29,9 +32,10 @@ class App extends Component {
             description={piece.description}
           />
         ))}
+        <DefinitionList definitions={definitions} />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
