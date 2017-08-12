@@ -1,5 +1,14 @@
 const pieces = [
   {
+    image: "sketchbook.jpg",
+    description: `
+    Along a bezier curve defined by four random points on a canvas, draw a series
+    of points in semitransparent white. In the next frame, move each of the four
+    points by a random vector. If a point reaches the edge of the canvas, reverse
+    its direction and invert the point color.
+    `,
+  },
+  {
     image: "export-22.344053.png",
     description: `
     Given an origin and a parallel destination, draw 1000 points of varying
