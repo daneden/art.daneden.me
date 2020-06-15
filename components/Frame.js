@@ -1,12 +1,15 @@
-import React, { Component } from 'react'
-import Imgix from 'react-imgix'
+import React, { Component } from "react"
+import Imgix from "react-imgix"
 
 export default class Frame extends Component {
   render() {
     let url = `https://dtegenart.imgix.net/${this.props.image}`
 
-    if(process.env.NODE_ENV && process.env.NODE_ENV.toUpperCase() === 'DEVELOPMENT') {
-      url = `${process.env.PUBLIC_URL}/images/${this.props.image}`
+    if (
+      process.env.NODE_ENV &&
+      process.env.NODE_ENV.toUpperCase() === "DEVELOPMENT"
+    ) {
+      url = `/images/${this.props.image}`
     }
 
     return (
@@ -17,12 +20,10 @@ export default class Frame extends Component {
           customParams={{
             fm: "pjpg",
           }}
-          fit={"max"}
+          sizes={"(min-width: 800px) 794px, 100vw"}
           src={url}
         />
-        <p className="frame__description">
-          {this.props.description}
-        </p>
+        <p className="frame__description">{this.props.description}</p>
       </div>
     )
   }
