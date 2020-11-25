@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cousine');
+@import url("https://fonts.googleapis.com/css?family=Cousine");
 
 * {
   margin: 0;
@@ -8,13 +8,13 @@
 }
 
 :root {
-  --highlight: #00C266;
+  --highlight: #00c266;
 }
 
 html {
   font: 80%/1.5 "Cousine", monospace;
-  background-color: #F5F5F5;
-  color: #25282B;
+  background-color: #f5f5f5;
+  color: #25282b;
 }
 
 body {
@@ -45,13 +45,14 @@ a {
   border-bottom: 2px solid var(--highlight);
 }
 
-  a:hover, a:focus {
-    color: var(--highlight);
-  }
+a:hover,
+a:focus {
+  color: var(--highlight);
+}
 
-  a:not([href*="daneden.me"])::after {
-    content: '\a0\27B6';
-  }
+a:not([href*="daneden.me"])::after {
+  content: "\a0\27B6";
+}
 
 .frame__image {
   width: 100%;
@@ -61,15 +62,15 @@ a {
   display: flex;
 }
 
-  .deflist__term {
-    font-weight: 700;
-    text-align: right;
-    flex: 0 1 25%;
-  }
+.deflist__term {
+  font-weight: 700;
+  text-align: right;
+  flex: 0 1 25%;
+}
 
-  .deflist__def {
-    flex: 0 1 75%;
-  }
+.deflist__def {
+  flex: 0 1 75%;
+}
 
 @media (max-width: 40rem) {
   .deflist__wrapper {

@@ -19,7 +19,7 @@ export default function HomePage() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://dtegenart.imgix.net/export-498.5307.png?auto=format&dpr=2&fm=pjpg&crop=faces&fit=max&w=800&h=1"
+          content="https://art.daneden.me/images/export-498.5307.png"
         />
         <meta
           property="og:description"
