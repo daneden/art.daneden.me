@@ -110,6 +110,14 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.0.tgz#6c9eafc78c1529248f8f4d92b0799a712b6052c6"
   integrity sha512-i9YbZPN3QgfighY/1X1Pu118VUz2Fmmhd6b2n0/O8YVgGGfw0FbUYoA97k7FkpGJ+pLCFEDLUmAPPV4D1kpeFw==
 
+"@imgix/js-core@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@imgix/js-core/-/js-core-3.1.3.tgz#9c26366f84f59e6c238c41455f45aacdf04862b7"
+  integrity sha512-7HUIFy4dq9wLSJURgPhglSni50rt3af4cAyBip14koR5oPIGgTGs0W41aQZc5gyCesh7jZaSjm4VxiwqS7gszw==
+  dependencies:
+    js-base64 "~2.6.0"
+    md5 "^2.2.1"
+
 "@next/env@10.0.3":
   version "10.0.3"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.3.tgz#ef1077d78bf500855576f83090d6fb1ec96272f8"
@@ -814,6 +822,11 @@ chalk@4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+charenc@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+  integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
+
 chokidar@3.4.3, chokidar@^3.4.1:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.3.tgz#c1df38231448e45ca4ac588e6c79573ba6a57d5b"
@@ -1064,6 +1077,11 @@ cross-fetch@3.0.5:
   integrity sha512-FFLcLtraisj5eteosnX1gf01qYDCOc4fDy0+euOt8Kn9YBY2NtXL/pCoYPavw24NIQkQqm5ZOLsGD5Zzj0gyew==
   dependencies:
     node-fetch "2.6.0"
+
+crypt@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
+  integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
 
 crypto-browserify@3.12.0, crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -1924,7 +1942,7 @@ is-binary-path@~2.1.0:
   dependencies:
     binary-extensions "^2.0.0"
 
-is-buffer@^1.1.5:
+is-buffer@^1.1.5, is-buffer@~1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
@@ -2240,6 +2258,15 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
+
+md5@^2.2.1:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/md5/-/md5-2.3.0.tgz#c3da9a6aae3a30b46b7b0c349b87b110dc3bda4f"
+  integrity sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==
+  dependencies:
+    charenc "0.0.2"
+    crypt "0.0.2"
+    is-buffer "~1.1.6"
 
 memory-fs@^0.4.1:
   version "0.4.1"
@@ -3001,12 +3028,12 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-imgix@^9.0.3:
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/react-imgix/-/react-imgix-9.0.3.tgz#b9099013d0d03ffa7b02a7ff3394d4fb360fa1ca"
-  integrity sha512-cSK3z7njg8eiWwEx+XhGUcwmjUMSe/OvzedyLhmuEXb9ASMjqJM8c6vegmrJ6qXHElWw1UOH7BwfoQn7IXiYVw==
+react-imgix@^9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/react-imgix/-/react-imgix-9.1.2.tgz#9b0cdc398234790b7a326d6404e0dfa02d431b28"
+  integrity sha512-oFuJJAzv9dkkY9l2UGRgsce2qVSEpaPa/SA/9syGXrZj3xPd1y/3CDF7OwGdtoDqlEigyIMwSOqd4Va8YarPXg==
   dependencies:
-    js-base64 "~2.6.0"
+    "@imgix/js-core" "^3.1.3"
     react-measure "^2.3.0"
     shallowequal "^1.1.0"
     warning "^4.0.1"
