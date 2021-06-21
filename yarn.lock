@@ -1442,10 +1442,10 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-imgix@^9.1.5:
-  version "9.1.5"
-  resolved "https://registry.yarnpkg.com/react-imgix/-/react-imgix-9.1.5.tgz#9dc12616a590ec98182d9baf8ca37d72f6338956"
-  integrity sha512-k6sbdvpCJrwTvu7axvbEa4WhkuuVUt+EwzjK45wRQlVwTKTHDSuBZyWJ2uThNe43ATxTqMEGTvbQr9DrlcMcyw==
+react-imgix@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/react-imgix/-/react-imgix-9.2.0.tgz#f52343f24b9180abfb4a34ea269bddc0f0edb1f4"
+  integrity sha512-KX9nSfaxAmOJZiqlvI5I9Y8FX0hTJ6qqhG0B5tYC1OxG/mkdjJBs7+UziOYv7WSMQmdkMt9/q7XOO5ebAdfztA==
   dependencies:
     "@imgix/js-core" "^3.1.3"
     react-measure "^2.3.0"
