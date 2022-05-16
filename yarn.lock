@@ -1363,13 +1363,22 @@ process@0.11.10, process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-prop-types@15.7.2, prop-types@^15.6.2:
+prop-types@15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
+
+prop-types@^15.6.2, prop-types@^15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
 
 public-encrypt@^4.0.0:
   version "4.0.3"
@@ -1442,17 +1451,18 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-imgix@^9.1.5:
-  version "9.1.5"
-  resolved "https://registry.yarnpkg.com/react-imgix/-/react-imgix-9.1.5.tgz#9dc12616a590ec98182d9baf8ca37d72f6338956"
-  integrity sha512-k6sbdvpCJrwTvu7axvbEa4WhkuuVUt+EwzjK45wRQlVwTKTHDSuBZyWJ2uThNe43ATxTqMEGTvbQr9DrlcMcyw==
+react-imgix@^9.5.1:
+  version "9.5.1"
+  resolved "https://registry.yarnpkg.com/react-imgix/-/react-imgix-9.5.1.tgz#dcfe92cfdb02f09a6f2dd45e511e6971c9f77438"
+  integrity sha512-p/pOvp3k4j68AjuWYl37av6TFbK/ZpanT/+TEzPCA+Z3rUl9Aay9zbiVGyVhAGa12yVnhxLCsQ1ONytJl3dCGQ==
   dependencies:
     "@imgix/js-core" "^3.1.3"
+    prop-types "^15.8.1"
     react-measure "^2.3.0"
     shallowequal "^1.1.0"
     warning "^4.0.1"
 
-react-is@16.13.1, react-is@^16.8.1:
+react-is@16.13.1, react-is@^16.13.1, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
 
